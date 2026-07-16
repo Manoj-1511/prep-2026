@@ -1,0 +1,53 @@
+
+#Largest element.
+class Main{
+    public static void main(String args[]){
+        
+        int[] arr={1,4,2,5,7,9};
+        int largest=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>largest){
+                largest=arr[i];
+            }
+           
+        }
+        System.out.println("Largest element="+largest);
+    }
+}
+#Smallest element in the array.
+class Main{
+    public static void main(String args[]){
+        
+        int[] arr={1,4,2,5,7,9};
+        int Smallest=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<Smallest){
+                Smallest=arr[i];
+            }
+           
+        }
+        System.out.println("Largest element="+Smallest);
+    }
+}
+#Second Largest Element.
+class Main{
+    public static void main(String args[]){
+        
+        int[] arr={1,4,2,5,7,9};
+        int largest=arr[0];
+        int S_largest=arr[0];
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>largest){
+                largest=arr[i];
+            }
+           
+        }
+        System.out.println("Largest element="+largest);
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<largest && arr[i]!=largest){
+                S_largest=arr[i];
+            }
+        }
+        System.out.println("Second largest element ="+S_largest);
+    }
+}
